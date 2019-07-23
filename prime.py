@@ -1,5 +1,10 @@
-n=int(input())
-if n==2 or n%2!=0:
-  print("yes")
+number = int(input())
+if number > 1:
+    for i in range(2, number):
+        if (number % i) == 0:
+            print("no")
+            break
+    else:
+        print("yes")
 else:
-  print("no")
+    print("no")
